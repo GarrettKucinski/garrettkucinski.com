@@ -14,8 +14,9 @@
     "clean": "rimraf public",
     "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
-    "test": "npm run type-check && npm run lint",
-    "type-check": "tsc -w"
+    "test": "yarn type-check && yarn lint",
+    "type-check": "tsc",
+    "type-watch": "yarn type-check -w"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -60,7 +61,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
+    "@typescript-eslint/parser": "^1.11.0",
     "eslint": "^6.0.0",
     "eslint-config-blvd": "^0.1.1",
     "eslint-config-prettier": "^5.0.0",
@@ -68,5 +69,10 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
   }
 }

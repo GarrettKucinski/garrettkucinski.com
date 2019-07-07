@@ -1,9 +1,8 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
     title: 'The Personal Portfolio of Garrett Kucinski',
-    description: 'A personal site containing the development work and blog of Garrett Kucinski, software engineer and architect',
+    description:
+      'A personal site containing the development work and blog of Garrett Kucinski, software engineer and architect',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://www.garrettkucinski.com',
     author: {
@@ -12,7 +11,8 @@ module.exports = {
       email: 'garrett.kucinski@gmail.com'
     }
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -22,7 +22,8 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [{
+        plugins: [
+          {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1rem'
