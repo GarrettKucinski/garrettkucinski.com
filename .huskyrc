@@ -1,4 +1,4 @@
 {
-  "pre-commit": "yarn format",
-  "pre-push": "yarn test"
+  "pre-commit": "npm run format",
+  "pre-push": "npm run test"
 }
