@@ -1,6 +1,6 @@
-import * as React from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import {StaticQuery, graphql} from 'gatsby'
 
 import 'modern-normalize'
 import '../styles/normalize'
@@ -10,41 +10,48 @@ import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
 interface StaticQueryProps {
-  site: {
+  site : {
     siteMetadata: {
-      title: string
-      description: string
-      keywords: string
+      title: string;
+      description: string;
+      keywords: string;
     }
   }
 }
 
-const IndexLayout: React.FC = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query IndexLayoutQuery {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
+const LayoutQuery = graphql `
+  query IndexLayoutQuery {
+    site {
+      siteMetadata {
+        title
+        description
       }
-    `}
-    render={(data: StaticQueryProps) => (
-      <LayoutRoot>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
-            { name: 'keywords', content: data.site.siteMetadata.keywords }
-          ]}
-        />
-        <Header title={data.site.siteMetadata.title} />
-        <LayoutMain>{children}</LayoutMain>
-      </LayoutRoot>
-    )}
-  />
+    }
+  }
+`
+
+const IndexLayout : React.FC = ({children}) => (
+  <StaticQuery
+    query={LayoutQuery}
+    render={({site: {
+      siteMetadata
+    }} : StaticQueryProps) => (
+    <LayoutRoot>
+      <Helmet
+        title={siteMetadata.title}
+        meta={[
+        {
+          name: 'description',
+          content: siteMetadata.description
+        }, {
+          name: 'keywords',
+          content: siteMetadata.keywords
+        }
+      ]}/>
+      <Header title={siteMetadata.title}/>
+      <LayoutMain>{children}</LayoutMain>
+    </LayoutRoot>
+  )}/>
 )
 
 export default IndexLayout

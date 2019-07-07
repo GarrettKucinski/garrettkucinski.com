@@ -2,18 +2,17 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
+    title: 'The Personal Portfolio of Garrett Kucinski',
+    description: 'A personal site containing the development work and blog of Garrett Kucinski, software engineer and architect',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    siteUrl: 'https://www.garrettkucinski.com',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'Garrett Kucinski',
+      url: 'https://twitter.com/realgarrettk',
+      email: 'garrett.kucinski@gmail.com'
     }
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -23,8 +22,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1rem'
@@ -48,7 +46,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+        siteUrl: 'https://www.garrettkucinski.com'
       }
     },
     'gatsby-plugin-emotion',
