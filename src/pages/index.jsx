@@ -7,10 +7,9 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  // TwitterIcon,
+  TwitterIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -128,36 +127,33 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Garrett Kucinski - Dad. Entrepreneur. Photographer. Adventure Seeker.
+          Garrett Kucinski - Entrepreneur. Writer. Adventure Seeker.
         </title>
         <meta
           name="description"
-          content="I’m Garrett, an entrepreneur based in Arizona."
+          content="I'm Garrett, an entrepreneur trying to help as many as I can live better lives."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Engineer. Photographer. Adventure Seeker.
+            Entrepreneur.<br />
+            Writer.<br />
+            Adventure Seeker.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Garrett, an YouTuber, podcaster, adventure seeker, and entrepreneur based in Arizona.
+            I’m Garrett, a YouTuber, podcaster, adventure seeker, and entrepreneur.
           </p>
           <div className="flex gap-6 mt-6">
-            {/* <SocialLink
-              href="https://twitter.com"
+            <SocialLink
+              href="https://twitter.com/garrettkucinski"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
-            /> */}
+            />
             <SocialLink
               href="https://www.instagram.com/garrettryanphotography/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com/garrettkucinski"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
             />
             <SocialLink
               href="https://www.linkedin.com/in/garrettkucinski/"
