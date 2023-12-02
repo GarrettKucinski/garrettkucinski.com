@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -68,10 +67,7 @@ function SocialLink({ icon: Icon, ...props }) {
 
 function Newsletter() {
   return (
-    <form
-      action="/thank-you"
-      className="p-6 border rounded-2xl border-zinc-100 dark:border-zinc-700/40"
-    >
+    <div className="p-6 border rounded-2xl border-zinc-100 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="flex-none w-6 h-6" />
         <span className="ml-3">Stay up to date</span>
@@ -79,19 +75,13 @@ function Newsletter() {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         Get notified when I publish something new, and unsubscribe at any time.
       </p>
-      <div className="flex mt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="flex-none ml-4">
-          Join
-        </Button>
-      </div>
-    </form>
+      <iframe src="https://embeds.beehiiv.com/a654bf19-b26a-4b53-876f-4f10b75cacfd?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style={{
+        margin: "0",
+        borderRadius: "0px !important",
+        backgroundColor: "transparent",
+        marginTop: "1rem",
+      }} />
+    </div>
   )
 }
 
@@ -135,7 +125,8 @@ export default function Home({ articles }) {
         />
       </Head>
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="grid max-w-2xl grid-cols-1 mx-auto gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div>
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Entrepreneur.<br />
             Writer.<br />
@@ -162,6 +153,8 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
+        <Newsletter />
+        </div>
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
@@ -170,9 +163,6 @@ export default function Home({ articles }) {
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
           </div>
         </div>
       </Container>
