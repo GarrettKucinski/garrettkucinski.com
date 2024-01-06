@@ -1,10 +1,11 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
-import Image from 'next/image'
+import atomicHabits from '@/images/photos/atomic-habits.png';
 
 export const meta = {
   author: 'Garrett Kucinski',
-  draft: true,
-  date: '2023-09-05',
+  image: atomicHabits.src,
+  draft: false,
+  date: '2024-01-06',
   title: 'Atomic Habits: Secrets to lasting behavior change',
   description:
     'Most of us want better lives, and most of us are perpetually unsure of how to motivate ourselves day in and day out to do the things that will get us where we want to go. In the book Atomic Habits, author James Clear lays out a framework for building habits that will help you achieve your goals.',
@@ -14,10 +15,14 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 Most of us want better lives, and most of us are perpetually unsure of how to motivate ourselves day in and day out to do the things that will get us where we want to go. In the book Atomic Habits author James Clear lays out a framework for building habits that will help you achieve your goals.
 
-<Image src="https://fakeimg.pl/600x400?text=Atomic+Habits+Video" width="600" height="400" alt="" />
+{/* <Image src="" width="600" height="400" alt="" /> */}
 
 ## Who Should Read this Book?
-The answer to this is simple: everyone. The book is written almost as a manual for getting the things you want out of life. No matter who you are or what you want, we are all the product of our habits, the small actions we take everyday that compound over time. Change your habits, change your life.
+The answer to this is simple: everyone. 
+
+The book is written blueprint for getting the things you want out of life. No matter who you are or what you want, we are all the product of our habits, the small actions we take everyday that compound over time.
+
+Change your habits, change your life.
 
 If any of the following apply I highly recommend you read this book
 - You genuinely want a playbook for acheiving more of your goals
@@ -35,7 +40,79 @@ If any of the following apply I highly recommend you read this book
 
 ## The Four Laws of Behavior Change
 1.  **Make it obvious** -
-Behavior change often strikes people as something super arduous and uncomfortable, but it doesn't have to be. In fact, the easier you make it for yourself to do the things you want to do, the more likely you are to do them. Basically if you want to go to the gym, put your gym clothes out the night before, if you want to read more put a book on your pillow. The easier you make it for yourself to automatically do the things you want to do, the more likely you are to do them. In the case of the book, you might go to bed with a few extra minutes and instead of browsing instagram until you fall asleep you instead say "Well, I have a book right here, I might as well read a few pages." 
-2. **Make it attractive** - When a habit is unattractive, perhaps unsurprisingly you are less likely to want to do whatever it is. Though you can't change that habit you want to form, you can change your perception of it. I've always wanted to be ripped as well as the kind of person who works out regularly and enjoys it. So for me, it helped starting out two days a week working out at home. This made it obivious because it was right where I was already. I made it attractive by eliminating the need to go to a gym or buy equipment. And, leading into the next law, it made it easy by reducing the friction between me and the habit. I didn't have to go anywhere, I didn't have to buy anything, I just had to do it.
-3. **Make it easy** - As I mentiond above with my work out habit, this law is all about making it as easy as possible to follow through on the thing you want yourself to do. In my case eliminating the need to go anywhere or own any equipment meant that the only barrier left was just doing the thing. If we can make our habits as easy as possible and reduce as much friction as we can, we are less likely to be able to come up with excuses to not do them.
+Behavior change often strikes people as something arduous and uncomfortable, but it doesn't have to be. In fact, the easier you make it for yourself to do the things you want to do, the more likely you are to do them. Basically if you want to go to the gym, put your gym clothes out the night before, if you want to read more put a book on your pillow. The easier you make it for yourself to automatically do the things you want to do, the more likely you are to do them. In the case of the book, you might go to bed with a few extra minutes and instead of browsing instagram until you fall asleep you instead say "Well, I have a book right here, I might as well read a few pages." 
+2. **Make it attractive** - When a habit is unattractive, perhaps unsurprisingly, you are less likely to want to do whatever it is. Though you can't change the habit itself, you can change your perception of it. I've always wanted to be absolutely ripped as well as the kind of person who works out regularly and enjoys it. So for me, it helped starting out two days a week working out at home. This made it obivious because being home meant I was effectively already at the gym, all I had to do was get to work. I made it attractive by eliminating the need to go to a gym or buy equipment. Reducing the friction between me and the habit also made it easy. I didn't have to go anywhere, I didn't have to buy anything, I just had to do it.
+3. **Make it easy** - As I mentiond above with my work out habit, this law is all about making it as easy as possible to follow through on the thing you want yourself to do. In my case eliminating the need to go anywhere or own any equipment meant that the only barrier left was just doing the thing. If we can make our habits as easy as possible and reduce as much friction as we can, we are less likely to be able to come up with excuses not to do them.
 4. **Make it satisfying** - Our brain is wired to want immediate returns. So the more we can reward ourselves immediately after doing the difficult habit we are trying to form the more likely we are to stick with it going forward. This can take many forms and just needs to be something that will give you a sense of accomplishment and satisfaction.
+
+## The Four Stages of Habit Formation
+1. **Cue** - The cue is the thing that triggers the habit. It can be a time of day, a place, a feeling, a person, or anything else that triggers the habit. For example, if you want to start reading more, you might set a cue of reading for 10 minutes every night before bed. The cue in this case is going to bed.
+2. **Craving** - The craving is the motivation behind the habit. It is the thing that makes you want to do the habit. In the case of reading before bed, the craving might be the desire to learn something new or to escape into a story.
+3. **Response** - The response is the habit itself. It is the thing you do. In the case of reading before bed, the response is reading.
+4. **Reward** - The reward is the thing that satisfies the craving. It is the thing that makes you want to do the habit again. In the case of reading before bed, the reward might be the satisfaction of learning something new or the enjoyment of a good story.
+
+## Good habits make time your ally, bad habits make time your enemy
+
+In the grand scheme of things, all of this talk about habits and how to make or break them might seem inconsequential. If you skip a workout, or don't write those 500 words, or miss practicing your instrument nothing really happens and life goes on. The problem with that momentary lapse is when it turns into another missed day, and another. Before you know it you've gone from a good habit to a bad one.
+
+In Atomic Habits author James Clear says that a 1% improvement every day will result in becoming 37% better over the course of a year, getting 1% worse will result in going nearly to zero.
+
+With that in mind we can see that the compounding effects of habit formation and change works both ways and gaining or losing 1% is barely recognizable. However the real magic happens over the span of a significant amount of time where we can see that habits, whether good or bad have a compounding effect on where we ultimately end up one, five, or even 10 years down the road.
+
+## Decide who you want to be, then act accordingly
+
+When we want to change our habits, often we focus on the outcome this change will provide. In other words we choose a goal and then do whatever it takes to acheive that goal.
+
+For example, someone who wants to lose weight might focus on making sure they maintain a certain caloric deficit until they reach their goal weight. The problem with this approach is that once the goal is reached, the motivation to continue the habit is gone. This is why so many people who lose weight end up gaining it back.
+
+A more effective way of changing our habits is to focus on the person we want to become. Instead of saying I want to lose 20 pounds, we could decide we want to be a person who maintains a healthy weight. By doing this we might start going to the gym regularly, eating healthier foods, and making sure we get eight hours of sleep. By doing these things we are assuming the identity of a person who maintains a healthy weight and over time will lose the 20 pounds and be a healthier person as well.
+
+When it comes to changing our habits, we can create a kind of flywheel effect. By deciding on we want to become, we can act more like that person would, which in turn makes us feel more like the person we want to be. The more we feel like that person, the more we will continue to behave in a way that perpetually reinforces that new identity.
+
+## You are what you repeadtedly do
+
+Hebbs Law, named after 1949 neuropsychologist Donald Hebbs, states that neurons that fire together wire together. Repeating a habit again and again strenghtens the assiociations between neurons and makes it easier to repeat the habit in the future.
+
+This is why bad habits can be so hard to break, and good ones feel impossible to start. We are literally battling the way our brains are wired. Imagine a stream of water that over decades has carved it's route deep into the ground. Now imagine trying to redirect the flow of that water. It's going to take a lot of effort to change the direction the water flows and a significant amount of time to carve a new path and change that direction permanently.
+
+This is similar to habit formation in the brain, the more we repeat a pattern of behavior, aka a habit, the more ingrained it becomes and the harder it is to change.
+
+## Making behavior change unavoidable
+
+When it comes to changing our behavior, i.e. our habits, the easiest way we can set yourselves up for success is not to try our hardest a being successful. Instead we will have greater odds of success if we make it nearly impossible to fail.
+
+There are a number of ways we can essentially guarantee we follow through on good habits while making bad ones nearly impossible to do.
+
+### The Two Minute Rule 
+
+The two minute rule is a way of making it easy to start a good habit. The main idea here is to make it so easy motivating yourself to start is nearly impossible. You may be tempted to take big steps but the key is to start small. For example, if you want to start practicing your guitar more, you might say "I will practice guitar every day for thirty minutes".
+
+This would be a mistake, however, because the moment the energy required to practice for thirty minutes outweighs your motivation to do it, that habit goes out the window. The better way is to break this into a series of steps.
+
+These steps might look something like this:
+1. Take out my guitar
+2. Tune my guitar
+3. Plug in the amp
+4. Play a song
+
+By breaking the habit down into these small steps, you are making it easy to start and hard to fail. The idea is that once you start, you will be more likely to continue. In the case of the guitar, once you have taken it out and tuned it, you are already halfway there. You might as well plug in the amp and play a song.
+
+### Commitment Devices
+
+Another way of making good habits hard to avoid is to use what author James Clear calls a commitment device. A commitment device is a way of making it so that you have to follow through on a habit or suffer a consequence.
+
+The key is the make it harder to *not* do the thing you want to do than it is to do it. For example, if you want to stop watching so much TV, you might unplug your TV and put the cord in a drawer far from the TV.
+
+Doing this makes it harder to watch TV than it is to not watch TV. You would have to go to the drawer, find the cord, plug it in, and then turn on the TV. This is a lot more work than just turning on the TV and therefore makes it likely you decide it's not worth the effort.
+
+### One Time Actions
+
+One time actions are things you can do once to aid in sticking with a good habit perpetually. One example might be buying smaller plates to help with portion control if you are trying to lose weight, making it physically impossible to put more food on your plate than you should eat.
+
+## Final Thoughts
+
+I really enjoyed reading Atomic Habits and learning about effective ways to move towards the person I want to be. I think so often we know the areas we'd like to improve in our lives but we aren't sure of how to effect lasting changes that will get us there. Often, we start a new year with a ton of motivation and optimism, telling ourselves this is the year we will finally get in shape, or learn to play that intstrument, or start that youtube channel.
+
+After a few weeks the motivation fades and bad habits start to creep back in and before we know it we've given up and written off our new identity as something we will never be.
+
+The good news is that it doesn't have to be this way. By following the advice in Atomic Habits we can make lasting changes that will help us become the person we want to be. We can start small and build on our successes, we can make it easy to start and hard to fail, and we can make it so that we have no choice but to follow through on the habits we want to form.

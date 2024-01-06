@@ -7,7 +7,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx'],
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com', 'fakeimg.pl'],
+    domains: ['images.unsplash.com', 'unsplash.com', 'fakeimg.pl'],
   },
   experimental: {
     scrollRestoration: true,
