@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -75,7 +76,7 @@ function Newsletter() {
       <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
         Get notified when I publish something new, and unsubscribe at any time.
       </p>
-      <iframe src="https://embeds.beehiiv.com/a654bf19-b26a-4b53-876f-4f10b75cacfd?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style={{
+      <iframe src="https://embeds.beehiiv.com/a654bf19-b26a-4b53-876f-4f10b75cacfd?slim=true" data-test-id="beehiiv-embed" height="52" style={{
         margin: "0",
         borderRadius: "0px !important",
         backgroundColor: "transparent",
@@ -112,7 +113,10 @@ function Photos() {
   )
 }
 
+
+
 export default function Home({ articles }) {
+
   return (
     <>
       <Head>
